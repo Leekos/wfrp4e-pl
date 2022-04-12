@@ -1,0 +1,49 @@
+{
+  "name": "wfrp4e-pl",
+  "title": "Warhammer 4ed PL - System.",
+  "description": "Warhammer 4ed PL - System.",
+  "authors": [ {"name":"silent_mark" }],
+  "flags": {},
+  "version": "5.2.4",
+  "minimumCoreVersion": "0.8.0",
+  "compatibleCoreVersion": "9",
+  "scripts": ["whfr4_pl.js"],
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "pl.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "basic",
+      "label": "Podstawowe Umiejętności",
+      "system": "wfrp4e",
+      "module": "wfrp4e-pl",
+      "path": "./packs/basic.db",
+      "type": "Item"
+    },    
+    {
+      "name": "tables-extra",
+      "label": "Tabele (Dodatkowe)",
+      "system": "wfrp4e",
+      "module": "wfrp4e-pl",
+      "path": "packs/tables-extra.db",
+      "type": "RollTable"
+    }
+  ],
+  "system": [
+    "wfrp4e"
+  ],
+  "dependencies": [
+    {
+      "name": "wfrp4e",
+      "type": "system"
+    }
+  ],
+  "socket": false,
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}
