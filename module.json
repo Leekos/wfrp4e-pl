@@ -4,7 +4,7 @@
   "description": "Warhammer 4ed PL - System.",
   "authors": [ {"name":"silent_mark" }],
   "flags": {},
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minimumCoreVersion": "0.8.0",
   "compatibleCoreVersion": "9",
   "scripts": ["whfr4_pl.js"],
@@ -42,8 +42,9 @@
       "type": "system"
     }
   ],
-  "url": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.1/wfrp4e-pl.zip",
-  "manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-pl/1.0.0/module.json",
+  "url": "https://github.com/silentmark/wfrp4e-pl",
+  "manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-pl/1.0.2/module.json",
+  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.2/wfrp4e-pl.zip",
   "socket": false,
   "protected": false,
   "coreTranslation": false,
