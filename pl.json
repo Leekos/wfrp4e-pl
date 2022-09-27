@@ -138,7 +138,7 @@
     "SETTINGS.MooPenetrating": "Wartości Penetracji",
     "SETTINGS.MooPenetratingHint": "Dodaje opcje aby Penetracja miała przypisaną wartość. Penetracja X oznacza że broń ignoruje X PP (jeśli nic nie jest podane, domyślnie penetruje 2)",
     "SETTINGS.MooQualities": "Nowe Zalety",
-    "SETTINGS.MooQualitiesHint": "Dodaje zalety 'Prosta' oraz 'Rozpęd'(?).",
+    "SETTINGS.MooQualitiesHint": "Dodaje zalety 'Prosta' oraz 'Impet'(?).",
     "SETTINGS.MooShieldAP": "PP Tarczy",
     "SETTINGS.MooShieldAPHint": "PP Tarczy oraz Mitygację Krytyczną (patrz niżej) stosuje się tylko podczas udanego testu obronnego.",
     "SETTINGS.MooCriticalMitigation": "Mitygacja Krytyczna",
@@ -1280,7 +1280,7 @@
     "PROPERTY.Custom": "Własny",
     "PROPERTY.CustomHint": "FORMAT - {type} 1: {type} 1 Description | {type} 2 (Rating) : {type} 2 Description | etc.",
     "Simple": "Prosta",
-    "Momentum": "Rozpęd",
+    "Momentum": "Impet",
 
     "PROPERTY.Flexible": "Giętki",
     "PROPERTY.Impenetrable": "Nieprzebijalny",
