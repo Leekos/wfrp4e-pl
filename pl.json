@@ -513,6 +513,7 @@
     "BROWSER.ModifiesDamage": "Modyfikuje obrażenia",
     "BROWSER.ModifiesRange": "Modyfikuje zasięg",
     "BROWSER.ItemList": "Lista Przedmiotów",
+    "BROWSER.LoadingBrowser" : "Ładowanie Przeglądarki...",
 
     "On Completion": "Przy Zakończeniu",
     "ExtendedTest.None": "Nic",
@@ -551,6 +552,7 @@
     "DIALOG.SuccessBonus": "Bonus Sukcesu",
     "DIALOG.TalentBonus": "Bonusy Talentów",
     "DIALOG.Bonuses": "Bonusy",
+    "DIALOG.Details" : "Szczegóły",
     "DIALOG.SLBonusTT": "PS który zawsze jest dodawany lub odejmowany (np. Defensywny)",
     "DIALOG.SuccessBonusTT": "PS który zostanie dodany w przypadku Sukcesu (np. Talenty)",
     "DIALOG.BonusTT": "Lista potencjalnych Bonusów",
@@ -791,6 +793,7 @@
     "ROLL.Failure": "Porażka. 'Nie.'",
     "ROLL.MarginalFailure": "Znikoma Porażka. 'Nie, ale...'",
     "ROLL.SizeCausedSuccess": "Modyfikatory Rozmiaru spowodowały sukces. PS wynosi +0",
+    "ROLL.HitAnotherEngagedTarget": "<b>Oops! trafiłeś w inny cel, wylosuj innego aktora związanego walką i zadaj normalne obrażenia</b>",
     "ROLL.CalledShot": "Atak Mierzony",
 
     "WFRP4E.Reach.Personal": "Osobisty",
@@ -893,6 +896,7 @@
     "WFRP4E.ConditionName.Unconscious": "Utrata Przytomności",
     "WFRP4E.ConditionName.Grappling": "Zapasy",
     "WFRP4E.ConditionName.Fear": "Strach",
+    "WFRP4E.ConditionName.Engagement": "Związany Walką",
     "WFRP4E.ConditionName.Dead": "Martwy",
 
     "WFRP4E.LocationsTable": "Miejsce Trafienia",
@@ -1405,7 +1409,7 @@
     "EFFECT.HideEffect": "Ukryj przed Graczami",
     "EFFECT.SystemEffects": "Efekty Systemowe",
     "EFFECT.SelectEffect": "Wybierz Efekt",
-    "EFFECT.Tooltip": "Te efekty MOGĄ powodować te bonusy",
+    "EFFECT.Tooltip": "Efekty, które wpłynęły na modyfikatory rzutu",
     "EFFECT.Target": "Cel: ",
     "EFFECT.ReduceQuantityOption": "Zmniejsz ilość przy użyciu",
     "EFFECT.QuantityError": "Niewystarczająca Ilość",
@@ -1426,6 +1430,8 @@
     "EFFECT.TestsRelatedToHearing": "Testy związane ze słuchem",
     "EFFECT.TestsRelatedToMovementOfAnyKind": "Testy związane z jakimkolwiek ruchem",
     "EFFECT.TestsRelatedToSight": "Testy związane ze wzrokiem",
+    "EFFECT.ShooterEngaged": "Strzelec jest związany walką - brak modyfikatorów z odległości",
+    "EFFECT.ShootingAtEngagedTarget": "Cel związany walką",
 
     "WFRP4E.MountButtonNotify": "Aktor z lewej ({mounter}) wsiadł na Aktora z prawej ({mountee})",
     "MountError": "Wsiadać możesz tylko na Aktorów o większym lub takim samym rozmiarze.",
