@@ -1380,6 +1380,7 @@
     "PROPERTY.Unbalanced": "Niezbalansowany",
     "PROPERTY.Custom": "Własny",
     "PROPERTY.CustomHint": "FORMAT - {type} 1: {type} 1 Description | {type} 2 (Rating) : {type} 2 Description | etc.",
+    "PROPERTY.Slash": "Tnący",
     "Simple": "Prosta",
     "Momentum": "Impet",
 
