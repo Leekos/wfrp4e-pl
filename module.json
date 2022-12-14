@@ -7,9 +7,9 @@
       "flags": {}
     }
   ],
-  "version": "1.0.11",
+  "version": "1.0.12",
   "scripts": [
-    "whfr4_pl.js"
+    "wfrp4e_pl.js"
   ],
   "languages": [
     {
@@ -41,7 +41,7 @@
   ],
   "url": "https://github.com/silentmark/wfrp4e-pl",
   "manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-pl/main/module.json",
-  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.11/wfrp4e-pl.zip",
+  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.12/wfrp4e-pl.zip",
   "id": "wfrp4e-pl",
   "relationships": {
     "systems": [
