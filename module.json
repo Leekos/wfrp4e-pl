@@ -7,7 +7,7 @@
       "flags": {}
     }
   ],
-  "version": "1.0.14",
+  "version": "1.0.15",
   "scripts": [
     "wfrp4e_pl.js"
   ],
@@ -30,30 +30,41 @@
       "flags": {}
     },
     {
-      "name": "tables-extra",
+      "name": "tables",
       "label": "Tabele (Dodatkowe)",
       "system": "wfrp4e",
-      "path": "packs/tables-extra.db",
+      "path": "packs/tables.db",
       "type": "RollTable",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "criticals",
+      "label": "Trafienia Krytyczne (Pod Bronią)",
+      "system": "wfrp4e",
+      "path": "packs/criticals.db",
+      "type": "Item",
       "private": false,
       "flags": {}
     }
   ],
   "url": "https://github.com/silentmark/wfrp4e-pl",
   "manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-pl/main/module.json",
-  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.14/wfrp4e-pl.zip",
+  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.15/wfrp4e-pl.zip",
   "id": "wfrp4e-pl",
   "relationships": {
     "systems": [
       {
         "id": "wfrp4e",
         "type": "system",
+        "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
         "compatibility": {}
       }
     ]
   },
   "compatibility": {
-    "minimum": "0.9.0",
-    "verified": "10"
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
   }
 }
