@@ -1,4 +1,5 @@
 {
+  "name": "wfrp4e-pl",
   "title": "Warhammer 4ed PL - System.",
   "description": "Warhammer 4ed PL - System.",
   "authors": [
@@ -7,7 +8,6 @@
       "flags": {}
     }
   ],
-  "version": "1.0.15",
   "scripts": [
     "wfrp4e_pl.js"
   ],
@@ -46,12 +46,21 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "armoury",
+      "label": "Zbrojownia",
+      "system": "wfrp4e",
+      "path": "packs/armoury.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "url": "https://github.com/silentmark/wfrp4e-pl",
   "manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-pl/main/module.json",
-  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.15/wfrp4e-pl.zip",
-  "id": "wfrp4e-pl",
+  "download": "https://github.com/silentmark/wfrp4e-pl/releases/download/1.0.16/wfrp4e-pl.zip",
+  "version": "1.0.16",
   "relationships": {
     "systems": [
       {
