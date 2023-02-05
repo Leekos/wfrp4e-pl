@@ -1670,7 +1670,7 @@
     "wfrp4epl.applySlashing.EnableHint": "Włącz cechę Tnący, która będzie zadawać 1 Stan Krwawienia, w przypadku gdy trafienie spowodowało również trafienie krytyczne. Za cenę X przewag, można wywołać dodatkowy Stan Krwawienia.",
   
     "wfrp4epl.arrowReclamation.Enable": "Włącz odzyskiwanie amunicji",
-    "wfrp4epl.arrowReclamation.EnableHint": "Włącz odzyskiwanie amunicji podczas testu na atak zasięgowy. Amunicja wystrzelona podczas Starcia zostanie przywrócona po jego zakończeniu.",
+    "wfrp4epl.arrowReclamation.EnableHint": "Włącz odzyskiwanie amunicji podczas testu na atak zasięgowy podczas walki (nie działa bez aktywanego Starcia). Amunicja wystrzelona podczas Starcia zostanie przywrócona po jego zakończeniu.",
   
     "wfrp4epl.arrowReclamation.EnableArrows": "Pozwól odzyskiwać Strzały",
     "wfrp4epl.arrowReclamation.EnableArrowsHint": "Zaznacz, aby gracze mogli odzyskiwać amunicję do Łuku",
