@@ -1693,6 +1693,9 @@
   
     "wfrp4epl.arrowReclamation.Percentage": "Docelowa Szansa",
     "wfrp4epl.arrowReclamation.PercentageHint": "Ustaw \"Szansę\" procentową dla rzutu wymaganego przez niektóre Zasady. Rzut się powiedzie, jeśli na k100 wypadnie mniej lub tyle samo, ile wynosi Docelowa Szansa",
+
+    "wfrp4epl.alternativeArmour.Enable": "Aktywuj alternatywne zasady Pancerzy", 
+    "wfrp4epl.alternativeArmour.EnableHint": "Zmienia kategorie pancerzy oraz zasady ich łączenia oraz udostępnia dodatkowe kompendium z dedykowanymi pancerzami.", 
   
     "wfrp4epl.SlashingApplied": "W wyniku trafienia krytycznego, spowodowano 1 Stan @Condition[Krwawienie]. Za {SlashingLevel} przewag można nadać dodatkowy stan Krwawienia.",
     "wfrp4epl.Chat.ArrowsRecovered": "{0} odnalazł(a) <strong>{2}</strong> sztuk „{1}” zdatnych do ponownego wykorzystania.",
@@ -1711,5 +1714,9 @@
     "WFRP4E.Properties.Recoverable": "Amunicja może być odzyskana nawet wtedy, jeśli normalnie zasady nie pozwalają na odzyskiwanie tego typu amunicji. <br/><em>(wymaga włączenia funkcji w ustawieniach)</em>",
     "WFRP4E.Properties.Unrecoverable": "Amunicja zawsze się niszczy po wystrzeleniu i nie może być nigdy odzyskana.",
     "WFRP4E.Properties.Sturdy": "Pocisk jest wytrzymały, więc łatwiej go odzyskać.<br/><b>Szansa</b>: rzuć dwa razy, wybierz niższy<br/><b>Zasady Sukcesu/Porażni</b>: neguje warunki Sukcesu/Porażki<br/><b>Inne zasady:</b> jeśli nie odzyskano, rzuć na Szansę.<br/><em>(wymaga włączenia funkcji w ustawieniach)</em>",
-    "WFRP4E.Properties.Frail": "Pocisk jest słaby i łatwo się psuje, przez co trudniej go odzyskać.<br/><b>Szansa</b>: rzuć dwa razy, wybierz wyższy<br/><b>Inne zasady:</b> jeśli odzyskano, rzuć na Szansę<br/><em>(wymaga włączenia funkcji w ustawieniach)</em>"
+    "WFRP4E.Properties.Frail": "Pocisk jest słaby i łatwo się psuje, przez co trudniej go odzyskać.<br/><b>Szansa</b>: rzuć dwa razy, wybierz wyższy<br/><b>Inne zasady:</b> jeśli odzyskano, rzuć na Szansę<br/><em>(wymaga włączenia funkcji w ustawieniach)</em>",
+
+   "WFRP4E.ArmourType.Light": "Lekki Pancerz",
+   "WFRP4E.ArmourType.Medium": "Średni Pancerz",
+   "WFRP4E.ArmourType.Heavy": "Ciężki Pancerz"
 }

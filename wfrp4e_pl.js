@@ -1,5 +1,19 @@
 Hooks.once("init", function() {
 	CONFIG.supportedLanguages["pl"] = "pl";
+
+    // Add enable/disable setting for arrow reclamation feature
+    game.settings.register("wfrp4e-pl", "alternativeArmour.Enable", {
+      name: "wfrp4epl.alternativeArmour.Enable",
+      hint: "wfrp4epl.alternativeArmour.EnableHint",
+      scope: "world",
+      config: true,
+      default: false,
+      type: Boolean,
+      onChange: value => {
+        foundry.utils.debouncedReload()
+      }
+    });
+
     // Add enable/disable setting for arrow reclamation feature
     game.settings.register("wfrp4e-pl", "arrowReclamation.Enable", {
       name: "wfrp4epl.arrowReclamation.Enable",
@@ -114,6 +128,10 @@ Hooks.once("init", function() {
 
       return game.i18n.format(stringId, objData);
   });
+
+  $("body").on("click", ".journal-sheet .item-property", ev => {
+    game.wfrp4e.utility.postProperty(ev.target.text)
+  })
 });
 
 Hooks.on("renderCompendiumDirectory", async () => {
@@ -124,6 +142,11 @@ Hooks.on("renderCompendiumDirectory", async () => {
     if (game.packs.get("wfrp4e-gm-toolkit.db.gm-toolkit-tables")) {
         game.packs.delete("wfrp4e-gm-toolkit.gm-toolkit-tables")
         ui.sidebar.element.find("[data-pack='wfrp4e-gm-toolkit.gm-toolkit-tables']").remove()
+    }
+    if (!game.settings.get("wfrp4e-pl", "alternativeArmour.Enable")) {
+      if (game.packs.get("wfrp4e-pl.armoury")) {
+        ui.sidebar.element.find("[data-pack='wfrp4e-pl.armoury']").remove()
+      }
     }
 });
 
@@ -232,6 +255,105 @@ Hooks.on("setup", () => {
   }
 
   mergeObject(game.wfrp4e.config, config)
+  if (game.settings.get("wfrp4e-pl", "alternativeArmour.Enable")) {
+    game.wfrp4e.config.armorTypes = {
+      "light": game.i18n.localize("WFRP4E.ArmourType.Light"),
+      "medium": game.i18n.localize("WFRP4E.ArmourType.Medium"),
+      "heavy": game.i18n.localize("WFRP4E.ArmourType.Heavy"),
+      "other": game.i18n.localize("WFRP4E.ArmourType.Other")
+    };
+
+
+    Reflect.defineProperty(ActorWfrp4e.prototype, 'armourPrefillModifiers', { value: 
+      function (item, type, options, tooltip = []) {
+
+        let modifier = 0;
+        let wearingMedium = 0;
+        let wearingHeavy = 0;
+    
+        for (let a of this.getItemTypes("armour").filter(i => i.isEquipped)) {
+          // For each armor, apply its specific penalty value, as well as marking down whether
+          // it qualifies for armor type penalties (wearingMail/Plate)
+    
+          // Skip practical
+          if (a.properties.qualities.practical)
+            continue;
+    
+          if (a.armorType.value == "medium")
+            wearingMedium += 1;
+          if (a.armorType.value == "heavy")
+            wearingHeavy += 1;
+        }
+        wearingMedium = Math.min(wearingMedium, 2);
+        wearingHeavy = Math.min(wearingHeavy, 2);
+  
+        let stealthPenaltyValue = 0;        
+        if (wearingMedium)
+          stealthPenaltyValue += -10 * wearingMedium;
+        if (wearingHeavy)
+          stealthPenaltyValue += -10 * wearingHeavy;
+  
+        if (type == "skill" && item.name.includes(game.i18n.localize("NAME.Stealth"))) {
+          if (stealthPenaltyValue) {
+            modifier += stealthPenaltyValue
+            tooltip.push(`Kara do Skradania ze względu na pancerz ciężki (max -20) lub średni (max -20) - (+${stealthPenaltyValue})`);
+          }
+        }
+        return modifier;
+      }
+    });
+
+
+    Reflect.defineProperty(ItemWfrp4e.prototype, '_addAPLayer', { value:
+        function (AP) {
+          // If the armor protects a certain location, add the AP value of the armor to the AP object's location value
+          // Then pass it to addLayer to parse out important information about the armor layer, namely qualities/flaws
+          for (let loc in this.currentAP) {
+            if (this.currentAP[loc] > 0) {
+
+              AP[loc].value += this.currentAP[loc];
+
+              let layer = {
+                value: this.currentAP[loc],
+                armourType: this.armorType.value // used for sound
+              }
+
+              let properties = this.properties
+              layer.impenetrable = !!properties.qualities.impenetrable;
+              layer.partial = !!properties.flaws.partial;
+              layer.weakpoints = !!properties.flaws.weakpoints;
+
+              if (this.system.special?.value && this.system.special?.value?.indexOf('Metal') !== -1) {
+                layer.metal = true;
+              }
+
+              AP[loc].layers.push(layer);
+            }
+          }
+        }
+      });
+
+      Reflect.defineProperty(ItemWfrp4e.prototype, '_armourExpandData', { value:
+        function()  {
+          let data = this.toObject().system
+          let properties = [];
+          properties.push(game.wfrp4e.config.armorTypes[this.armorType.value]);
+          let special = data.special?.value?.split(',');
+          if (special) {
+            for(let i = 0; i < special.length; i++) {
+              properties.push(special[i]);
+            }
+          }
+          let itemProperties = this.Qualities.concat(this.Flaws)
+          for (let prop of itemProperties)
+            properties.push("<a class ='item-property'>" + prop + "</a>")
+          properties.push(this.penalty.value);
+      
+          data.properties = properties.filter(p => !!p);
+          return data;
+      }
+    });
+  }
 });
 
 
