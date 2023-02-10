@@ -10,6 +10,7 @@
   ],
   "scripts": [
     "wfrp4e_pl.js"
+    
   ],
   "languages": [
     {
@@ -64,7 +65,26 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "label": "Talenty rasowe",
+      "type": "Item",
+      "name": "items",
+      "path": "packs/items.db",
+      "system": "wfrp4e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "tables",
+      "label": "Tabele (Rasowe)",
+      "system": "wfrp4e",
+      "path": "packs/tablesrc.db",
+      "type": "RollTable",
+      "private": false,
+      "flags": {}
     }
+
   ],
   "url": "https://github.com/silentmark/wfrp4e-pl",
   "manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-pl/main/module.json",

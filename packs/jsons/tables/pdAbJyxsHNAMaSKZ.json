@@ -1,0 +1,139 @@
+{
+  "_id": "pdAbJyxsHNAMaSKZ",
+  "name": "Rasy (gnomy)",
+  "img": "systems/wfrp4e/ui/buttons/d10.webp",
+  "results": [
+    {
+      "_id": "bEysKwW19OXNMYPz",
+      "type": 0,
+      "text": "Człowiek",
+      "range": [
+        1,
+        89
+      ],
+      "drawn": false,
+      "flags": {
+        "wfrp4e": {
+          "species": "human"
+        }
+      },
+      "img": null,
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "p07DNQuRfG0SaxF6",
+      "type": 0,
+      "text": "Niziołek",
+      "range": [
+        90,
+        93
+      ],
+      "drawn": false,
+      "flags": {
+        "wfrp4e": {
+          "species": "halfling"
+        }
+      },
+      "img": null,
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "zghHooIyXaX6rIhY",
+      "type": 0,
+      "text": "Krasnolud",
+      "range": [
+        94,
+        97
+      ],
+      "drawn": false,
+      "flags": {
+        "wfrp4e": {
+          "species": "dwarf"
+        }
+      },
+      "img": null,
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "rwYWjxQVM1gPJYcu",
+      "type": 0,
+      "text": "Gnom",
+      "range": [
+        98,
+        98
+      ],
+      "drawn": false,
+      "flags": {
+        "wfrp4e": {
+          "species": "gnome"
+        }
+      },
+      "img": null,
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "8QuTA6bFOTC1rw4y",
+      "type": 0,
+      "text": "Wysoki Elf",
+      "range": [
+        99,
+        99
+      ],
+      "drawn": false,
+      "flags": {
+        "wfrp4e": {
+          "species": "helf"
+        }
+      },
+      "img": null,
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "M6USiMyjRRVbSLcm",
+      "type": 0,
+      "text": "Leśny Elf",
+      "range": [
+        100,
+        100
+      ],
+      "drawn": false,
+      "flags": {
+        "wfrp4e": {
+          "species": "welf"
+        }
+      },
+      "img": null,
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    }
+  ],
+  "formula": "1d100",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "q5vlcEmDqiqutgWE",
+  "sort": 0,
+  "flags": {
+    "wfrp4e": {
+      "key": "species"
+    },
+    "core": {
+      "sourceId": ""
+    },
+    "wfrp4e-pl": {
+      "initialization-folder": "Rasowe tabele",
+      "sort": 0
+    }
+  },
+  "description": null
+}

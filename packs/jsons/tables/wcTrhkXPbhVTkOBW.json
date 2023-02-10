@@ -1,0 +1,169 @@
+{
+  "_id": "wcTrhkXPbhVTkOBW",
+  "name": "Kolor Włosów - Gnomy",
+  "img": "systems/wfrp4e/ui/buttons/d10.webp",
+  "results": [
+    {
+      "_id": "NuPlR6Llhx4wTYpy",
+      "type": 0,
+      "text": "Kasztanowy",
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "KQvV7KmZyetVafpK",
+      "type": 0,
+      "text": "Czarny",
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "EyBZbDh7oACh2Izh",
+      "type": 0,
+      "text": "Brązowy",
+      "range": [
+        5,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "7L9u0FPVxAskYjEJ",
+      "type": 0,
+      "text": "Ciemny Brązowy",
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "djBKAzkItd8cs3WS",
+      "type": 0,
+      "text": "Rudy",
+      "range": [
+        12,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "0E3oeQCihBD1v1Pu",
+      "type": 0,
+      "text": "Złoty Blond",
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "FXa7h1za3M6uqI9T",
+      "type": 0,
+      "text": "Jasny Brązowy",
+      "range": [
+        8,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "lPkmKnL9IEJBnOp2",
+      "type": 0,
+      "text": "Czerwony Blond",
+      "range": [
+        15,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "t4s67Abbzc2uV00H",
+      "type": 0,
+      "text": "Biały",
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "uXPff6fBG1QwC3ly",
+      "type": 0,
+      "text": "Biały Blond",
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    }
+  ],
+  "formula": "2d10",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "q5vlcEmDqiqutgWE",
+  "sort": 0,
+  "flags": {
+    "wfrp4e": {
+      "key": "hair",
+      "column": "gnome"
+    }
+  },
+  "description": null
+}

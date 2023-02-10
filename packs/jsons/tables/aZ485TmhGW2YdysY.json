@@ -1,0 +1,184 @@
+{
+  "_id": "aZ485TmhGW2YdysY",
+  "name": "Kolor oczu - Gnomy",
+  "img": "systems/wfrp4e/ui/buttons/d10.webp",
+  "results": [
+    {
+      "_id": "2Nw0CyGwAHmRrYly",
+      "type": 0,
+      "text": "Czarny",
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "afLOlwsZSNB7DgNV",
+      "type": 0,
+      "text": "Niebieski",
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "zokVa5nTgEvLrG3D",
+      "type": 0,
+      "text": "Brązowy",
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "GEBhABgKnStEAX3I",
+      "type": 0,
+      "text": "Ciemny Brązowy",
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "tFb1UrhanuP4Tagr",
+      "type": 0,
+      "text": "Ziemny Brązowy",
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "lVXzaBVdYect2dIi",
+      "type": 0,
+      "text": "Orzechowy",
+      "range": [
+        12,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "6srFKMqcPpkcMcP4",
+      "type": 0,
+      "text": "Blady Niebieski",
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "X29DNPejYTnIdfqU",
+      "type": 0,
+      "text": "Blady Brązowy",
+      "range": [
+        15,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "Osx4CVaTiSgPbSFT",
+      "type": 0,
+      "text": "Blady Zielony",
+      "range": [
+        8,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "zanblz07bqOTO1hj",
+      "type": 0,
+      "text": "Turkusowy",
+      "range": [
+        5,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    },
+    {
+      "_id": "JW9KAFIXF3zRdNBc",
+      "type": 0,
+      "text": "Fioletowy",
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "",
+      "documentId": null,
+      "weight": null
+    }
+  ],
+  "formula": "2d10",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "q5vlcEmDqiqutgWE",
+  "sort": 0,
+  "flags": {
+    "wfrp4e": {
+      "key": "eyes",
+      "column": "gnome"
+    }
+  },
+  "description": null
+}

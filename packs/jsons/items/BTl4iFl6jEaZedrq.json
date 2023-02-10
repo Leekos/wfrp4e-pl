@@ -1,0 +1,71 @@
+{
+  "_id": "BTl4iFl6jEaZedrq",
+  "name": "Dostrojony do Ulgu",
+  "type": "talent",
+  "img": "modules/wfrp4e-core/icons/spells/shadow.png",
+  "system": {
+   "description": { "type": "String", "label": "Description", "value": "<p>Jesteś dostrojony do Szarego Wiatru Magii. Wszyscy, którzy mają Percepcję Magiczną, dostrzegają szarą mgłę i cienie oplatające twoje ciało.</p>\n<p>Możesz używać swojej Umiejętności Splatanie Magii(<em>Ulgu</em>) Szamiast Skradania.</p>\n<p>Każde skuteczne użycie Tradycji Cieni w odległości 8 metrów od ciebie zyskuje +1 PS. Ten bonus nie rośnie niezależnie od tego, ilu <em>Dostrojonych do Ulgu</em> jest w pobliżu rzucającego zaklęcie.</p>" },
+    "gmdescription": {
+      "type": "String",
+      "label": "Description",
+      "value": null
+    },
+    "max": {
+      "type": "String",
+      "label": "Max Advances",
+      "value": "1"
+    },
+    "advances": {
+      "type": "Number",
+      "label": "Advances",
+      "value": 1,
+      "force": false
+    },
+    "career": {
+      "value": "",
+      "type": "String",
+      "label": "Career"
+    },
+    "tests": {
+      "type": "String",
+      "label": "Tests",
+      "value": "Splatanie magii (Ulgu) zamiast Skradania; Każde skuteczne użycie Tradycji Cieni w odległości 8 metrów od ciebie zyskuje +1 PS"
+    }
+  },
+  "effects": [
+    {
+      "_id": "XtlMzLibp3FKzOye",
+      "flags": {
+        "wfrp4e": {
+          "effectTrigger": "prefillDialog",
+          "effectApplication": "actor",
+          "script": "if (args.type == \"cast\" && args.item.lore.value == \"shadow\")\n    args.prefillModifiers.slBonus += 1",
+          "preventDuplicateEffects": true
+        }
+      },
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null
+      },
+      "icon": "modules/wfrp4e-core/icons/spells/shadow.png",
+      "label": null,
+      "tint": null,
+      "transfer": true
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "wB2SUVWqe48eINZu": 3
+  },
+  "flags": {
+    "wfrp4e-pl": {
+      "initialization-folder": "Rasowe tabele"
+    },
+    "core": {
+      "sourceId": ""
+    }
+  }
+}
